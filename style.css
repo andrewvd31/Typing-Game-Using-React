@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.box{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    color: #00b800;
+    margin-top: 1.5em;
+    text-align: center;
+    padding: 2em;
+    font-family: 'Press Start 2P';
+}
+
+.box h2{
+    font-size: 2.3rem;
+    margin-bottom: 1.2em;
+}
+
+.time-remaining{
+    font-size: 2rem;
+    margin-top: 0.8em;
+}
+
+.word-count{
+    font-size: 2rem;
+    margin-top: 1em;
+}
+
+textarea{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    max-width: 90%;
+    width: 90%;
+    margin-bottom: 0.6em;
+    font-size: 2rem;
+    padding: 0.4em;
+    line-height: 1.6;
+    min-height: 225px;
+    max-height: 325px;
+    background-color: #00b800;
+    outline: none;
+}
+
+textarea:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+button{
+    padding: 1.4em 4em;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: 'Press Start 2P';
+    display: block;
+    margin: 2em auto;
+}
+
+button:hover{
+    background-color: #00b800;
+}
+
+button:disabled{
+    background-color: red;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px){
+    .box{
+        padding: 1em;
+    }
+
+    .box h2{
+        font-size: 1.4rem;
+        line-height: 1.6;
+    }
+
+    textarea{
+        width: 100%;
+        max-height: 100px;
+        font-size: 1.2rem;
+    }
+    
+    .time-remaining,.word-count{
+        font-size: 1rem;
+        margin-top: 1em;
+        line-height: 1.6;
+    }
+}
